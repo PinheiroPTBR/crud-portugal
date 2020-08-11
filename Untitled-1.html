@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Residência em Portugal</h1>
+
+    Você está morando em Portugal?
+    <select class="morada" id="demo">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+
+        <!-- não = procure o Consulado de Portugal em seu estado
+        sim = tenha comprovantes de sua morada, como contrato de aluguel (arrendamento), 
+        declaração da juntada da freguesia ... -->
+    </select>
+
+<h1>The onclick Event</h1>
+
+<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "false";
+}
+</script>
+
+</body>
+</html>
