@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+    This is just an exercise
+    The goal is practice the basic features of HTML and JS
+    With VSCODE and GitHube on a Shared Reposotory
+ -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residência em Portugal</title>
+</head>
+
+<!-- teste -->
+
+<body>
+
+    <h1>Residência em Portugal</h1>
+
+    Você está morando em Portugal?
+    <select class="morada" id="demo">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+
+        <!-- não = procure o Consulado de Portugal em seu estado
+        sim = tenha comprovantes de sua morada, como contrato de aluguel (arrendamento), 
+        declaração da juntada da freguesia ... 
+    
+    ALTERADO JONATHAN
+    
+    -->
+    </select>
+
+    <br>
+
+    Você está estudando <strong>presencialmente</strong> em Portugal?
+    <select class="estudo">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+    </select>
+
+    <!--Você estuda de forma PRESENCIAL em Portugal?
+    não
+    sim = Você pode pedir sua autorização de residência com base em estudo.-->
+
+    <br>
+
+    Você possui contrato de trabalho em Portugal?
+    <select class="trabalho">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+    </select>
+
+    <!--Você possui contrato de trabalho em Portugal?
+    não
+    sim = você pode pedir sua autorização de residência com base em contrato de trabalho (art. 88, II)
+    -->
+
+    <br>
+
+    Você trabalha como autônomo (profissional independente) em Portugal?
+    <select class="autonomo">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+    </select>
+
+    <!-- não
+    sim = você pode pedir sua autorização de residência com base em trabalho autônomo (art. 89, II). Você precisará
+    iniciar atividade nas Finanças e emitir recibos verdes. -->
+
+    <br>
+
+    <button onclick="validation()">Resposta</button>
+    <p id="demo"></p>
+
+    <script>
+
+function validation () {
+    var morada = document.getElementsById("demo").innerHTML = "testado";
+    
+}
+
+//document.write(morada);
+
+    </script>
+
+    <style>
+
+        body{
+           background-color: gray;
+           display: inline-table;
+        }
+
+    </style>
+
+
+
+</body>
+
+</html>
